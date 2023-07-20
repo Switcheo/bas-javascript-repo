@@ -5,7 +5,7 @@ import { BasStore } from "src/stores/BasStore";
 
 export const delegate = async (store: BasStore, validator: string): Promise<void> => {
   const amount = await prompt({
-    title: 'Enter delegation amount (in ether): ',
+    title: 'Enter delegation amount (in BOLT): ',
     rules: [
       {
         required: true,
@@ -33,7 +33,7 @@ export const delegate = async (store: BasStore, validator: string): Promise<void
 
 export const undelegate = async (store:BasStore, validator: string, defaultAmount = '0'): Promise<void> => {
   const amount = await prompt({
-    title: 'Enter undelegation amount (in ether): ',
+    title: 'Enter undelegation amount (in BOLT): ',
     rules: [
       {
         required: true,
