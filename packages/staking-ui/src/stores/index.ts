@@ -24,7 +24,7 @@ if (window.location.search.length > 0) {
 console.log(`Current env is: ${currentEnvironment}`)
 
 if (currentEnvironment === 'env') {
-  config = makeDefaultConfig(Number('${CHAIN_ID}'), '${CHAIN_NAME}', '${CHAIN_RPC}', {
+  config = makeDefaultConfig(Number('42070'), 'Boltchain Devnet', 'https://rpc.devnet.boltchain.com/', {
     homePage: "${EXPLORER_HOME_URL}",
     txUrl: "${EXPLORER_TX_URL}",
     addressUrl: "${EXPLORER_ADDRESS_URL}",
